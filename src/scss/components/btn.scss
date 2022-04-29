@@ -118,4 +118,18 @@
     opacity: 0.8;
   }
 }
+.vacancy__btn-all {
+  padding-top: 30px;
+  font-weight: $medium;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #008393;
+  padding-left: 35px;
+  margin-bottom: 30px;
+  &:hover {
+    color: #008393;
+  }
+}
 

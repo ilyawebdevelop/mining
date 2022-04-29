@@ -12223,6 +12223,21 @@ h3 {
   opacity: 0.8;
 }
 
+.vacancy__btn-all {
+  padding-top: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #008393;
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+.vacancy__btn-all:hover {
+  color: #008393;
+}
+
 .header {
   padding: 10px 0;
 }
@@ -13069,4 +13084,118 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.vacancies {
+  padding-top: 0;
+  background: #FAFAFA;
+}
+.vacancies__title {
+  padding-left: 98px;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 56px;
+  letter-spacing: 0.03em;
+}
+.vacancies .vacancies-main__item {
+  margin-bottom: 30px;
+}
+
+.vacancy {
+  background: #FAFAFA;
+  padding-top: 0;
+}
+.vacancy__title {
+  position: relative;
+}
+.vacancy__title a {
+  position: absolute;
+  left: -60px;
+  top: 7px;
+}
+.vacancy__price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #D63E45;
+  margin-bottom: 45px;
+}
+.vacancy__form {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 20px rgba(61, 186, 203, 0.15);
+  border-radius: 30px;
+  padding: 36px;
+}
+.vacancy__form-title {
+  padding-left: 25px;
+  margin-bottom: 30px !important;
+  text-transform: none;
+}
+.vacancy__form-file {
+  border-radius: 30px;
+  height: 65px;
+  background: #EFF9FB;
+  display: flex;
+  align-items: center;
+  padding-left: 30px !important;
+  margin-top: 10px;
+}
+.vacancy__form input {
+  padding-left: 30px !important;
+  border-radius: 25px;
+  background: #EFF9FB;
+  border: none;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(54, 54, 54, 0.6);
+}
+.vacancy__form input:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  background: #EFF9FB;
+}
+.vacancy__form label {
+  padding-left: 30px !important;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(54, 54, 54, 0.6);
+}
+.vacancy__form .questions__form-btn {
+  padding: 16px 49px;
+}
+.vacancy h3 {
+  margin-bottom: 20px;
+}
+.vacancy ul {
+  margin-bottom: 45px;
+}
+.vacancy ul li::before {
+  content: "—";
+  position: relative;
+  left: -5px;
+  color: #008393;
+}
+.vacancy .vacancies-main__item {
+  padding: 36px;
+  margin-bottom: 30px;
+}
+
+.form-files__files-input {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(54, 54, 54, 0.6);
+  cursor: pointer;
+  display: flex;
+}
+.form-files__files-input::before {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 21px;
+  background: url("../img/vacancy/file-icon.svg") no-repeat center center/cover;
+  margin-right: 11px;
 }
