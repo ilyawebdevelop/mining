@@ -1,0 +1,138 @@
+// Specifications
+html,
+body {
+	height: 100%;
+	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+  color: $main-color;
+  font-family: $font-family;
+  font-size: 18px ;
+  font-weight: $regular;  
+}
+body.hidden {
+  overflow: hidden
+}
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (max-width: 767px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.section-title {
+  margin-bottom: 45px;
+}
+.section-subtitle {
+  margin-bottom: 30px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {  
+  font-family: $font-family;
+  font-weight: $regular;
+  color: $main-color;
+}
+h1 {
+  font-weight: $light;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: 0.02em;
+  span {
+    font-weight: $regular;
+    color: $red-color;
+  }
+}
+h2 { 
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  span {   
+    color: $red-color;
+  }
+}
+h3 {  
+  font-weight: $medium;
+  font-size: 18px;
+  line-height: 21px;  
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.button-prev {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.button-next {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.swiper-pagination {
+  position: relative;  
+  width: fit-content!important;
+  bottom: 227px!important;
+  left: -16px!important;
+}
+.swiper-pagination-bullet {
+  width: 60px;
+  height: 3px;
+  opacity: 1;
+  background: #61BEC4;
+  border-radius: 0;
+}
+.swiper-pagination-bullet-active {
+  height: 5px;
+  background: #008393;
+  width: 60px;
+}
+.service-title {
+  font-weight: $light;
+  font-size: 52px;
+  line-height: 56px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.service-card {
+  margin-bottom: 60px;
+  text-align: center;
+  &__title {  
+    font-weight: $bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 284px;
+    margin: 0 auto;
+  }
+  img {
+    margin: 0 auto 30px;
+  }
+}
+
+
+
+
+

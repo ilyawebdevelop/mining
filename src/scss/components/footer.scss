@@ -1,0 +1,33 @@
+// Footer
+.footer {
+  padding: 20px 0 30px;
+  background-color: $main-color;
+  &__logo {
+    width: 70px;
+    height: 80px;
+  }
+  &__nav {
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+    li {
+      &:not(:last-child){
+        margin-right: 30px;
+      }
+    }
+    ul>li>a {   
+      font-weight: $regular;
+      font-size: 18px;
+      line-height: 30px;    
+      letter-spacing: 0.04em;
+      
+      color: rgba(#fff, $alpha: 0.7);
+    }
+  }
+  &__right {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+  }
+}

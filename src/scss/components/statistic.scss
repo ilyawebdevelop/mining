@@ -1,0 +1,25 @@
+// statistic
+.statistic {
+  &__wrapper {
+    box-shadow: 0px 0px 16px rgba(89, 187, 199, 0.1);
+    border-radius: 30px;
+    padding: 25px 0;
+    position: relative;
+    background: #fff;
+    top: -86px;
+  }
+  &__num {
+    font-weight: $bold;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    color: $red-color;
+  }
+  &__title {   
+    font-weight: $light;
+    font-size: 22px;
+    line-height: 26px;  
+    color: $blue-color;
+    text-align: center;
+  }
+}

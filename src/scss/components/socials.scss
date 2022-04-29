@@ -1,0 +1,11 @@
+// socials
+.socials {
+  ul {
+    display: flex;
+  }
+  li {
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+}

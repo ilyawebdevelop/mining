@@ -1,0 +1,36 @@
+// about
+.about {
+  padding-top: 0;
+  padding-bottom: 90px;
+  &__img {
+    height: 380px;
+    border-radius: 30px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    font-weight: $light;
+    padding-left: 98px;
+    font-size: 52px;
+    line-height: 56px;   
+    letter-spacing: 0.03em;   
+  }
+  &__descr {   
+    font-weight: $light;
+    font-size: 24px;
+    line-height: 40px; 
+    margin-top: 45px;
+    padding-left: 98px;
+    margin-bottom: 45px;
+  }
+  &__content {
+    padding-left: 98px;
+    p {
+      margin-bottom: 45px;
+    }
+  }
+}

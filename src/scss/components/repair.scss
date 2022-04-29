@@ -1,0 +1,43 @@
+// repair
+.intro-repair {
+  padding-bottom: 25px;
+  padding-top: 0;
+  &__title {
+    max-width: 325px; 
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: 0.02em;
+  }
+}
+.repair-slide {
+  padding-bottom: 70px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__offer {
+    padding-top: 70px;
+  }
+}
+.repair-slide-arrow-wrapper {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.repair {
+  padding-top: 0;
+  margin-bottom: -100px;
+  background: url('@img/advantages/advantages-bg.svg') no-repeat top center / cover;
+  &__wrapper {
+    z-index: 1;
+    padding-top: 45px;
+    position: relative;
+    top: -125px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(89, 187, 199, 0.1);
+    border-radius: 30px;
+  }
+  &__title {
+
+  }
+}

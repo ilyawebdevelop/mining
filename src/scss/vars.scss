@@ -1,0 +1,27 @@
+// Colors
+$main-color: #363636;
+$main-light-color: rgba(54, 54, 54, 0.8);
+$blue-light-color: #61BEC3;
+$blue-color: #008393;
+$red-color: #D63E45;
+$white-color: #fff;
+
+
+// Fonts
+$font-family: 'Roboto';
+
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+
+ // Containers
+:root { 
+  --content-width: 1330px;
+  --content-fluid-width: 1790px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+}
