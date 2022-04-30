@@ -7,6 +7,10 @@
     position: relative;
     background: #fff;
     top: -86px;
+    @media (max-width: 767px){
+     top: -53px;
+     padding-bottom: 0;
+    }
   }
   &__num {
     font-weight: $bold;
@@ -14,6 +18,10 @@
     line-height: 84px;
     text-align: center;
     color: $red-color;
+    @media (max-width: 991px){
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
   &__title {   
     font-weight: $light;
@@ -21,5 +29,10 @@
     line-height: 26px;  
     color: $blue-color;
     text-align: center;
+    @media (max-width: 991px){
+      margin-bottom: 30px;
+      font-size: 15px;
+      line-height: 18px;
+    }
   }
 }

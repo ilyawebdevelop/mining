@@ -17,15 +17,27 @@
     &-title {
       line-height: 26px;
       font-weight: $bold;
+      @media (max-width: 991px){
+        font-weight: $medium;
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
     &-subtitle {     
       font-size: 18px;
       line-height: 26px;
       text-align: center;
       color: #6F6F6F;
+      @media (max-width: 991px){
+        font-size: 14px;
+        line-height: 20px;
+      }      
     }
     img {
       margin: 0 auto 30px;
+      @media (max-width: 767px){
+        min-height: 62px;
+      }
     }
   }
 }

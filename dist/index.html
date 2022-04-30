@@ -15,23 +15,29 @@
 		<!-- Header -->
 <header class="header" id="header">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+    <div class="row align-items-center align-sm-items-start">
+      <div class="col-6 col-sm-3">
+        <a class="logo" href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
       </div>
-      <div class="col-lg-8">
+      <div class="col-6 col-sm-9">
         <div class="header__right">
           <div class="header__contacts">
-            <a href="tel:+73952503832">+7 (3952) 50-38-32</a>
+            <a class="d-none d-sm-block" href="tel:+73952503832">+7 (3952) 50-38-32</a>
             <div class="socials">
               <ul class="socials__list">
                 <li class="socials__item">
-                  <a href="#"><img src="img/header/telegram.svg" alt="icon"></a>                
+                  <a href="#"><img src="img/header/telegram.svg" alt="icon"></a>
                 </li>
                 <li class="socials__item">
-                  <a href="#"><img src="img/header/vk.svg" alt="icon"></a>        
-                </li>             
+                  <a href="#"><img src="img/header/vk.svg" alt="icon"></a>
+                </li>
               </ul>
+              <!-- Hamburger Menu -->
+              <div class="hamburger d-flex d-lg-none" id="toggle">
+                <div class="top-bun"></div>
+                <div class="meat"></div>
+                <div class="bottom-bun"></div>
+              </div>
             </div>
           </div>
           <nav class="header__nav">
@@ -54,8 +60,8 @@
             </ul>
           </nav>
         </div>
-       
-      
+
+
       </div>
     </div>
   </div>
@@ -79,25 +85,28 @@
       </div>
     </div>
   </div>
+  <div class="intro-bg d-block d-md-none">
+    <img src="img/intro/intro-img1.png" alt="intro-bg">
+  </div>
 </section>
 			<!-- statistic -->
 <div class="statistic">
   <div class="container">
     <div class="statistic__wrapper">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-6 col-lg-3">
           <div class="statistic__num">10</div>
           <div class="statistic__title">лет на рынке</div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-6 col-lg-3">
           <div class="statistic__num">420</div>
           <div class="statistic__title">клиентов</div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-6 col-lg-3">
           <div class="statistic__num">12</div>
           <div class="statistic__title">специалистов</div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-6 col-lg-3">
           <div class="statistic__num">512</div>
           <div class="statistic__title">другое</div>
         </div>
@@ -115,7 +124,7 @@
       </h2>
     </div>
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-6 col-lg-4">
         <div class="direction__item">
           <a href="repair.html">
             <div class="direction__img">
@@ -125,7 +134,7 @@
           </a>        
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-6 col-lg-4">
         <div class="direction__item">
           <a href="creation.html">
             <div class="direction__img">
@@ -135,7 +144,7 @@
           </a>        
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-6 col-lg-4">
         <div class="direction__item">
           <a href="video.html">
             <div class="direction__img">
@@ -145,7 +154,7 @@
           </a>        
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-6 col-lg-4">
         <div class="direction__item">
           <a href="outsourcing.html">
             <div class="direction__img">
@@ -155,7 +164,7 @@
           </a>        
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-6 col-lg-4">
         <div class="direction__item">
           <a href="finance.html">
             <div class="direction__img">
@@ -165,7 +174,7 @@
           </a>         
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-6 col-lg-4">
         <div class="direction__item">
           <a href="shop.html">
             <div class="direction__img">
@@ -208,7 +217,7 @@
 </section>
 			<!-- advantages -->
 <section class="advantages" id="advantages">
-  <div class="container">
+  <div class="container advantages__container">
     <div class="advantages__wrapper">
       <div class="row">
         <div class="col">
@@ -218,37 +227,37 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-6 col-lg-4">
           <div class="advantages__item">
             <img src="img/advantages/advantages-icon1.svg" alt="advantages-icon">
             <h3 class="advantages__item-title text-center">Экспертный подход </h3>
             <div class="advantages__item-subtitle">к решению задач клиента</div>         
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-6 col-lg-3">
           <div class="advantages__item">
             <img src="img/advantages/advantages-icon2.svg" alt="advantages-icon">
             <h3 class="advantages__item-title text-center">Нешаблонные решения</h3>
             <div class="advantages__item-subtitle">«под ключ»</div>         
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-6 col-lg-4">
           <div class="advantages__item">
             <img src="img/advantages/advantages-icon3.svg" alt="advantages-icon">
             <h3 class="advantages__item-title text-center">Разные варианты оплаты </h3>
             <div class="advantages__item-subtitle">безналичный, наличный, крипта</div>         
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-5 offset-lg-1">
+      
+    
+        <div class="col-6 col-lg-5 offset-lg-1">
           <div class="advantages__item">
             <img src="img/advantages/advantages-icon4.svg" alt="advantages-icon">
             <h3 class="advantages__item-title text-center">дополнительные Бонусы </h3>
             <div class="advantages__item-subtitle">для каждого клиента</div>         
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="offset-3 offset-lg-0 col-6 col-lg-4">
           <div class="advantages__item">
             <img src="img/advantages/advantages-icon5.svg" alt="advantages-icon">
             <h3 class="advantages__item-title text-center">Особые условия  </h3>
@@ -260,209 +269,9 @@
    
   </div>
 </section>
-			<!-- vacancies-main -->
-<section class="vacancies-main" id="vacancies-main">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2 class="vacancies-main__title section-title text-center">
-          Вакансии
-        </h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="vacancies-main__item">
-          <div class="vacancies-main__item-top">
-            <div class="vacancies-main__item-title">
-              Мастер по ремонту импульсных блоков питания. Сервисный инженер.
-            </div>
-            <div class="vacancies-main__item-subtitle">
-              Обязанности:
-            </div>
-            <div class="vacancies-main__item-text">
-              Ремонт импульсных блоков питания;
-              Ведение не сложной отчётности в ЦРМ;
-              Диагностика и ремонт электронного оборудования.
-            </div>
-          </div>
-          <div class="vacancies-main__item-bottom">           
-            <div class="vacancies-main__item-price">
-              от 60 тыс.руб.
-            </div>
-            <a href="#" class="vacancies-main__item-btn">Подробнее</a>
-          </div>      
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="vacancies-main__item">
-          <div class="vacancies-main__item-top">
-            <div class="vacancies-main__item-title">
-              Мастер по ремонту S9
-            </div>
-            <div class="vacancies-main__item-subtitle">
-              Обязанности:
-            </div>
-            <div class="vacancies-main__item-text">
-              Способность к быстрому обучению, наличие системного мышления и умения самостоятельно найти и решить
-              проблему;
-              Ведение не сложной отчётности в ЦРМ;
-              Ремонт плат s9.
-            </div>
-          </div>
-          <div class="vacancies-main__item-bottom">
-            <div class="vacancies-main__item-price">
-              от 60 тыс.руб.
-            </div>
-            <a href="" class="vacancies-main__item-btn">Подробнее</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <a class="vacancies-main__btn text-center" href="vacancies.html">Все вакансии</a>
-      </div>
-    </div>
-  </div>
-</section>
-			<!-- blog -->
-<section class="blog" id="blog">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2 class="blog__title section-title text-center">
-          Блог
-        </h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="blog__item">
-          <a href="#">
-            <div class="blog__item-img">
-              <img src="img/blog/blog-img.png" alt="blog-image">
-            </div>
-            <div class="blog__item-title text-center">Заголовок записи в блоге</div>
-            <div class="blog__item-date text-center">02 мар 12:32</div>
-          </a>         
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <a href="#">
-          <div class="blog__item">
-            <div class="blog__item-img">
-              <img src="img/blog/blog-img.png" alt="blog-image">
-            </div>
-            <div class="blog__item-title text-center">Заголовок записи в блоге</div>
-            <div class="blog__item-date text-center">02 мар 12:32</div>
-          </div>
-        </a>      
-      </div>
-      <div class="col-lg-4">
-        <a href="#">
-          <div class="blog__item">
-            <div class="blog__item-img">
-              <img src="img/blog/blog-img.png" alt="blog-image">
-            </div>
-            <div class="blog__item-title text-center">Заголовок записи в блоге</div>
-            <div class="blog__item-date text-center">02 мар 12:32</div>
-          </div>
-        </a>       
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <a href="blog.html" class="blog__btn text-center">Все записи в блоге</a>
-      </div>
-    </div>
-  </div>
-</section>
-			<!-- contacts -->
-<section class="contacts" id="contacts">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-7">
-        <h2 class="contacts__title">Контакты: </h2>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="contacts__item">
-              <div class="contacts__item-title">Адрес:</div>
-              <div class="contacts__item-content">
-                <p>г. Иркутск, </p>
-                <p>ул. Пискунова, 128д/2
-                </p>
-              </div> 
-              <a href="tel:+73952503832">+7 (3952) 50-38-32</a>            
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="contacts__item">
-              <div class="contacts__item-title">Часы работы:</div>
-              <div class="contacts__item-content right">
-                <p>с 09:00 до 18:00 без обеда</p>
-                <p>суббота с 10:00 до 15:00</p>
-                <p>воскресенье - выходной</p>
-              </div>                      
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="contacts__map">
-          <img src="img/contacts/map.png" alt="contacts-map">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+			
 		</main>
-		<!-- Footer -->
-<footer class="footer" id="footer">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-2">
-        <a class="footer__logo" href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
-      </div>
-      <div class="col-lg-7">
-        <nav class="footer__nav">
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item">
-              <a href="#">Услуги</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="about.html">О компании</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="vacancies.html">Вакансии</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="blog.html">Блог</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="contacts.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col-lg-3">
-        <div class="footer__right">
-          <a class="footer__btn" href="#">С нами</a>
-          <div class="socials">
-            <ul class="socials__list">
-              <li class="socials__item">
-                <a href="#"><img src="img/header/telegram.svg" alt="icon"></a>                
-              </li>
-              <li class="socials__item">
-                <a href="#"><img src="img/header/vk.svg" alt="icon"></a>        
-              </li>             
-            </ul>
-          </div>
-        </div>      
-      </div>
-    </div>
-  </div>
-</footer>
+		
 	</div>
 
 	<script src="js/app.min.js"></script>
