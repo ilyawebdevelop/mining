@@ -54,6 +54,9 @@
   &:hover {
     color: $blue-color;
   }
+	@media (max-width: 991px){     
+		margin-top: 0;
+	}
 }
 .blog__btn {
   margin-top: 45px;
@@ -66,18 +69,26 @@
   &:hover {
     color: $blue-color;
   }
+	@media (max-width: 991px){     
+		margin-top: 15px;
+	}
 }
 .footer__btn {
   margin-right: 40px;
   text-align: center;
-  padding: 11px 0;
-  width: 132px; 
+  padding: 11px 20px;
   background: $blue-color;
   color: $white-color;
+	width: 132px;
   border-radius: 20px;
   &:hover {
     color: $white-color;
   }
+	@media (max-width: 767px){
+		order: 2;
+		margin-top: 40px;
+		margin-right: 0;
+	}
 }
 .services-card__btn {
   width: fit-content;
@@ -113,7 +124,7 @@
 .questions__form-btn {  
   font-weight: $bold;
   font-size: 16px;
-  padding: 18px 49px;
+  padding: 16px 49px;
   line-height: 19px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -126,6 +137,9 @@
     color: $white-color;
     opacity: 0.8;
   }
+	@media (max-width: 575px){
+		width: 200px;
+	}
 }
 .vacancy__btn-all {
   padding-top: 30px;
@@ -140,5 +154,8 @@
   &:hover {
     color: #008393;
   }
+	@media (max-width: 991px){
+		padding-top: 75px;
+	}
 }
 

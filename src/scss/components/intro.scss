@@ -50,6 +50,12 @@
     font-size: 72px;
     line-height: 72px;
     letter-spacing: 0.02em;
+		 @media (max-width: 991px){
+      font-size: 30px;
+      line-height: 36px;
+      max-width: 320px;
+      margin-bottom: 14px;
+    }
   }
 }
 .finance-slide {
@@ -58,10 +64,19 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+		@media (max-width: 575px){
+     flex-direction: column;
+    }
   }
   &__offer {
     padding-top: 70px;
+		@media (max-width: 991px){
+			padding-top: 10px;
+		}
   }
+	@media (max-width: 991px){
+		height: auto;
+	}
 }
 .finance-slide-arrow-wrapper {
   position: relative;
@@ -92,6 +107,12 @@
     font-size: 72px;
     line-height: 72px;
     letter-spacing: 0.02em;
+		@media (max-width: 991px){
+      font-size: 30px;
+      line-height: 36px;
+      max-width: 320px;
+      margin-bottom: 14px;
+    }
   }
 }
 .video-slide {
@@ -100,10 +121,20 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+		@media (max-width: 991px){
+			flex-direction: column;
+		 }
   }
   &__offer {
     padding-top: 70px;
+		@media (max-width: 991px){
+			padding-top: 10px;
+		}
   }
+	@media (max-width: 991px){
+		height: auto;
+    padding-bottom: 155px;
+	}
 }
 .video-slide-arrow-wrapper {
   position: relative;
@@ -134,6 +165,12 @@
     font-size: 72px;
     line-height: 72px;
     letter-spacing: 0.02em;
+		@media (max-width: 991px){
+      font-size: 30px;
+      line-height: 36px;
+      max-width: 320px;
+      margin-bottom: 14px;
+    }
   }
 }
 .outsourcing-slide {
@@ -142,10 +179,20 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+		@media (max-width: 991px){
+			flex-direction: column;
+		}
   }
   &__offer {
     padding-top: 70px;
+		@media (max-width: 991px){
+			padding-top: 10px;
+		}
   }
+  @media (max-width: 991px){
+		height: auto;
+    padding-bottom: 155px;
+	}
 }
 .outsourcing-slide-arrow-wrapper {
   position: relative;
@@ -179,18 +226,35 @@
     font-size: 72px;
     line-height: 72px;
     letter-spacing: 0.02em;
+		@media (max-width: 991px){
+      font-size: 30px;
+      line-height: 36px;
+      max-width: 320px;
+      margin-bottom: 14px;
+    }
   }
 }
 .creation-slide {
-  padding-bottom: 70px;
-  height: 560px;
+	padding-bottom: 117px;
+  // height: 560px;
   &__wrapper {
     display: flex;
     justify-content: space-between;
+		@media (max-width: 1199px){
+			flex-direction: column;
+		
+		}
   }
   &__offer {
     padding-top: 70px;
+		@media (max-width: 991px){
+			padding-top: 0;
+		}
   }
+	@media (max-width: 991px){
+		// height: 620px;
+		padding-bottom: 117px;
+	}
 }
 .creation-slide-arrow-wrapper {
   position: relative;

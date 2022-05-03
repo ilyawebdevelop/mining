@@ -1,8 +1,5 @@
 // direction
 .direction {
-  &__title {
-    
-  }
   &__img {
     margin-bottom: 45px;
     img {
@@ -29,5 +26,8 @@
       height: 224px;
       padding: 28px 0 44px;
     }
+  }
+  @media (max-width: 991px){
+    padding-top: 0;
   }
 }

@@ -12,6 +12,12 @@
         height: 100%;
         object-fit: cover;
       }
+			@media (max-width: 1199px){     
+				margin: 0 auto;
+			}
+			@media (max-width: 991px){     
+				width: 100%;
+			}
     }
     &-title { 
       font-weight: $bold;
@@ -26,5 +32,8 @@
       line-height: 22px;
       color: $main-light-color;
     }
+		@media (max-width: 1199px){     
+			margin-bottom: 30px;
+		}
   }
 }

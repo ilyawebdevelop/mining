@@ -40,5 +40,10 @@
     &:hover {
       box-shadow: none;
     }
+		@media (max-width: 991px){     
+			margin-bottom: 30px;
+			padding: 30px;
+			min-height: auto;
+		}
   }
 }

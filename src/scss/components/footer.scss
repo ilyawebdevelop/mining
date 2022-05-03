@@ -5,23 +5,33 @@
   &__logo {
     width: 70px;
     height: 80px;
+		@media (max-width: 767px){
+			margin: 0 auto 20px;
+		}
   }
   &__nav {
     ul {
       display: flex;
       justify-content: center;
+			@media (max-width: 767px){
+				flex-direction: column;
+				text-align: center;
+				margin-bottom: 40px;
+			}
     }
     li {
       &:not(:last-child){
         margin-right: 30px;
+				@media (max-width: 767px){
+					margin-right: 0;
+				}
       }
     }
     ul>li>a {   
       font-weight: $regular;
       font-size: 18px;
       line-height: 30px;    
-      letter-spacing: 0.04em;
-      
+      letter-spacing: 0.04em;      
       color: rgba(#fff, $alpha: 0.7);
     }
   }
@@ -29,5 +39,8 @@
     justify-content: flex-end;
     display: flex;
     align-items: center;
+		@media (max-width: 767px){
+			flex-direction: column;
+		}
   }
 }

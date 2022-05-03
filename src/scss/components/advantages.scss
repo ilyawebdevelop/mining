@@ -8,6 +8,10 @@
     background: #FFFFFF;
     box-shadow: 0px 2px 20px rgba(61, 186, 203, 0.15);
     border-radius: 30px;
+		@media (max-width: 991px){     
+      margin-top: 0px;	
+			padding-top: 45px;	
+    }
   }
   &__title {
     margin-bottom: 60px;
@@ -40,4 +44,7 @@
       }
     }
   }
+	@media (max-width: 991px){     
+		padding-top: 0;
+	}
 }

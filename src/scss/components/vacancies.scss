@@ -7,11 +7,20 @@
     font-weight: $light;
     font-size: 52px;
     line-height: 56px; 
-    letter-spacing: 0.03em;   
+    letter-spacing: 0.03em; 
+		@media (max-width: 991px){
+			padding-left: 0;
+      font-size: 30px;
+      margin-bottom: 30px;
+      line-height: 40px;
+		}
   }
   .vacancies-main__item {
     margin-bottom: 30px;
   }
+	@media (max-width: 991px){
+		padding-top: 30px;
+	}
 }
 .vacancy {
   background: #FAFAFA; 
@@ -22,6 +31,9 @@
       position: absolute;
       left: -60px;
       top: 7px;
+			@media (max-width: 991px){
+				display: none;
+			}
     }
   }
   &__price {
@@ -40,10 +52,13 @@
       padding-left: 25px;
       margin-bottom: 30px!important;
       text-transform: none;
+			@media (max-width: 991px){
+				margin-bottom: 20px!important;				
+			}
     }
     &-file {
       border-radius: 30px;
-      height: 65px;
+      height: 51px;
       background: #EFF9FB;
       display: flex;
       align-items: center;
@@ -76,7 +91,27 @@
     .questions__form-btn {
       padding: 16px 49px;
     }
+		@media (max-width: 991px){
+			padding: 30px 12px 12px;
+		}
   }
+	&__all {		
+		font-weight: $light;
+		font-size: 15px;
+		line-height: 18px;		
+		color: #008393;
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		&::before {
+			content: '';
+			display: block;
+			width: 16px;
+			height: 14px;
+			margin-right: 16px;
+			background: url('@img/vacancy/arrow-blue.svg') no-repeat center center / cover;
+		}
+	}
   h3 {
     margin-bottom: 20px;
   }
@@ -95,6 +130,9 @@
     padding: 36px;
     margin-bottom: 30px;
   }
+	@media (max-width: 991px){
+		padding-top: 30px;
+	}
 }
 .form-files__files-input {
   font-weight: $light;
@@ -111,4 +149,8 @@
     background: url('@img/vacancy/file-icon.svg') no-repeat center center / cover;
     margin-right: 11px;
   }
+}
+
+.input-wrapper.first {
+	margin-bottom: 5px;
 }

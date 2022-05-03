@@ -21,13 +21,21 @@
     &-title {   
       z-index: 1;
       font-weight: $medium;
-      font-size: 26px;
-      line-height: 26px;   
+      font-size: 26px;      
       letter-spacing: 0.03em;
       color: #FFFFFF;
       margin-bottom: 25px;
+			@media (max-width: 991px){
+				font-weight: $regular;
+				font-size: 24px;
+				line-height: 36px;				
+			}		
+      @media (max-width: 575px){
+				margin-bottom: 0;	
+        width: 350px;
+			}		
     }
-    .col {
+    .col-12, .col {
       padding: 0;
     }
     textarea {   
@@ -45,12 +53,17 @@
         border: none;
         outline: none;
         padding-top: 1.625rem;
-        padding-bottom: 0.39rem!important;
-      
+        padding-bottom: 0.39rem!important;      
       }
+			@media (max-width: 575px){
+				height: 102px!important;
+			}
     }  
     .input-wrapper.first {
       margin-right: 5px;
+			@media (max-width: 575px){
+				margin-right: 0;
+			}
     }
     .input-wrapper {
       margin-bottom: 5px;
@@ -72,11 +85,13 @@
         &:focus {
           box-shadow: none;
           border: none;
-          outline: none;
-         
+          outline: none;         
         }
       }       
     }
+		@media (max-width: 575px){
+		padding: 20px 20px 0 20px;
+		}
   }
 }
 

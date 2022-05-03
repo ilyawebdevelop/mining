@@ -7,7 +7,18 @@
     font-size: 72px;
     line-height: 72px;
     letter-spacing: 0.02em;
+		@media (max-width: 991px){
+			font-size: 30px;
+			line-height: 36px;
+			max-width: 320px;
+			margin-bottom: 30px
+		}
   }
+	&__img {
+		@media (max-width: 991px){
+      width: 500px;
+    } 
+	}
 }
 .repair-slide {
   padding-bottom: 70px;
@@ -16,7 +27,13 @@
     justify-content: space-between;
   }
   &__offer {
-    padding-top: 70px;
+    padding-top: 35px;
+		@media (max-width: 991px){
+      background-size: 480px!important;
+    } 
+		@media (max-width: 575px){
+      padding-top: 10px;
+    } 
   }
 }
 .repair-slide-arrow-wrapper {
@@ -36,8 +53,5 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 16px rgba(89, 187, 199, 0.1);
     border-radius: 30px;
-  }
-  &__title {
-
   }
 }

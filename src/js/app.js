@@ -22,7 +22,15 @@ let mySwiperMemory = new Swiper(repairSlider, {
 	navigation: {
     nextEl: '.button-next',
     prevEl: '.button-prev',
-  }, 
+  }
+});
+
+// Инициализация слайдера complects
+const complectsSlider = document.querySelector('.complects__slider');
+let mySwiperComplects = new Swiper(complectsSlider, { 	
+  slidesPerView: 4,	
+  spaceBetween: 20, 	
+  loop: true,  
 	breakpoints: {  
 		0: {
 			slidesPerView: 1,	
@@ -38,39 +46,7 @@ let mySwiperMemory = new Swiper(repairSlider, {
 		},     
 		992: {	
 			slidesPerView: 3,	
-			centeredSlides: true,
-		},
-		1200: {		
-			centeredSlides: true,
-		},
-		1500: {		
-			
-		}
-	}
-});
-
-// Инициализация слайдера complects
-const complectsSlider = document.querySelector('.complects__slider');
-let mySwiperComplects = new Swiper(complectsSlider, { 	
-  slidesPerView: 4,	
-  spaceBetween: 20, 	
-  loop: true,  
-	breakpoints: {  
-		0: {
-			slidesPerView: 4,	
-			centeredSlides: true,
-		},  
-		576: {
-			slidesPerView: 4,	
-			centeredSlides: true,
-		},  
-		768: {
-			slidesPerView: 4,
 			centeredSlides: true,	
-		},     
-		992: {	
-			slidesPerView: 4,	
-			
 		},
 		1200: {	
 			slidesPerView: 4,	
@@ -229,19 +205,18 @@ let mySwiperAwards = new Swiper(awardsSlider, {
   loop: true,  
 	breakpoints: {  
 		0: {
-			slidesPerView: 4,	
-			centeredSlides: true,
-		},  
+			centeredSlides: false,
+			slidesPerView: 1,	
+		},  	
 		576: {
-			slidesPerView: 4,	
+			slidesPerView: 2,	
 			centeredSlides: true,
 		},  
 		768: {
-			slidesPerView: 4,
-			centeredSlides: true,	
+			slidesPerView: 2,		
 		},     
 		992: {	
-			slidesPerView: 4,	
+			slidesPerView: 3,	
 			
 		},
 		1200: {	
@@ -261,19 +236,19 @@ let mySwiperPartners = new Swiper(partnersSlider, {
   loop: true,  
 	breakpoints: {  
 		0: {
-			slidesPerView: 6,	
+			slidesPerView: 2,	
 			centeredSlides: true,
 		},  
 		576: {
-			slidesPerView: 6,	
+			slidesPerView: 3,	
 			centeredSlides: true,
 		},  
 		768: {
-			slidesPerView: 6,
-			centeredSlides: true,	
+			slidesPerView: 4,
+			// centeredSlides: true,	
 		},     
 		992: {	
-			slidesPerView: 6,	
+			slidesPerView: 5,	
 			
 		},
 		1200: {	
@@ -286,35 +261,5 @@ let mySwiperPartners = new Swiper(partnersSlider, {
 });
 
 
-// Burger
-const btnMenu = document.querySelector('#toggle');
-const menu = document.querySelector('.header__nav-list');
-const bodyEl = document.querySelector('body');
-let navItemAll = document.querySelectorAll('.header__nav-item');
 
-
-const toggleMenu = function() {
-	menu.classList.toggle('open');	
-}
-const toggleBurger = function() {
-	btnMenu.classList.toggle('active');
-}
-const bodyOverflow = function() {
-	bodyEl.classList.toggle('hidden');
-}
-btnMenu.addEventListener('click', function(e) {
-	e.stopPropagation();
-	toggleMenu();		
-	toggleBurger();
-	bodyOverflow();
-});	
- navItemAll.forEach((el) => {		
-	el.addEventListener("click", function () {
-		if (menu.classList.contains("open")) {			
-			toggleMenu();
-			toggleBurger();
-			bodyOverflow();
-		}				
-	});	
-})
 
