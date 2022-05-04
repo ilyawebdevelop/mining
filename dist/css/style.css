@@ -12216,12 +12216,17 @@ h3 {
   cursor: pointer;
   position: relative;
   z-index: 3;
+  transition: background 0.2s linear;
 }
 @media (max-width: 991px) {
   .hamburger {
     margin-left: auto;
     margin-top: 37px;
   }
+}
+
+.hamburger.active {
+  background: url("../img/close-icon.png") no-repeat center center/cover;
 }
 
 .hamburger div {
@@ -12583,6 +12588,16 @@ h3 {
   .logo {
     width: 89px;
   }
+}
+
+.top-bun, .meat, .bottom-bun {
+  opacity: 1;
+}
+
+.top-bun.active,
+.meat.active,
+.bottom-bun.active {
+  opacity: 0;
 }
 
 .intro {
@@ -13379,6 +13394,45 @@ h3 {
 @media (max-width: 767px) {
   .footer__right {
     flex-direction: column;
+  }
+}
+
+.footer__top {
+  padding-bottom: 15px;
+}
+
+.footer__bottom {
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 767px) {
+  .copyright {
+    text-align: center;
+  }
+}
+
+.develop {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.develop a {
+  display: inline-block;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .develop {
+    text-align: center;
   }
 }
 

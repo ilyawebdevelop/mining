@@ -44,3 +44,34 @@
 		}
   }
 }
+.footer__top {
+  padding-bottom: 15px;
+}
+.footer__bottom {
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.copyright {
+  font-weight: $regular;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.7);
+  @media (max-width: 767px){
+    text-align: center;
+  }
+}
+.develop {
+  font-weight: $regular;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.7);
+  a {
+    display: inline-block;
+    color: #fff;
+  }
+  @media (max-width: 767px){
+    text-align: center;
+  }
+}

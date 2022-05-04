@@ -11,6 +11,11 @@ const toggleMenu = function() {
 const toggleBurger = function() {
 	btnMenu.classList.toggle('active');
 }
+const toggleMenuLine = function() {
+	menuLine1.classList.toggle('active');
+	menuLine2.classList.toggle('active');
+	menuLine3.classList.toggle('active');
+}
 const bodyOverflow = function() {
 	bodyEl.classList.toggle('hidden');
 }
@@ -19,6 +24,7 @@ btnMenu.addEventListener('click', function(e) {
 	toggleMenu();		
 	toggleBurger();
 	bodyOverflow();
+	toggleMenuLine();
 });	
  navItemAll.forEach((el) => {		
 	el.addEventListener("click", function () {
@@ -29,3 +35,7 @@ btnMenu.addEventListener('click', function(e) {
 		}				
 	});	
 })
+
+const menuLine1 = document.querySelector('.top-bun');
+const menuLine2 = document.querySelector('.meat');
+const menuLine3 = document.querySelector('.bottom-bun');

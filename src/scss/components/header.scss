@@ -85,3 +85,11 @@
     width: 89px;
   }
 }
+.top-bun, .meat, .bottom-bun {
+  opacity: 1;
+}
+.top-bun.active,
+.meat.active,
+.bottom-bun.active {
+  opacity: 0;
+}
