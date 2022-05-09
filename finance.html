@@ -246,7 +246,7 @@
     <div class="services-card__title">Ремонт <span>Hash плат</span></div>
     <p class="services-card__descr">Bitmain, Innosilicon — любая сложность ремонта</p>
     <div class="services-card__price">от 2 500 руб.</div>
-    <a class="services-card__btn" href="#">Уточнить стоимость</a>
+    <button class="btn-reset services-card__btn" data-graph-path="modal-problem">Уточнить стоимость</button>
   </div>
 </div>     
       </div>
@@ -258,9 +258,9 @@
   </div>
   <div class="services-card__content">
     <div class="services-card__title">Ремонт <span>контрольных плат</span></div>
-    <p class="services-card__descr">Прошивка, лечение от вирусов AntBuild (v1, v2, v3), NightSwitcher</p>
+    <p class="services-card__descr">Прошивка, лечение от вирусов AntBuild (v1, v2, v3), NightSwitcher Прошивка, лечение от вирусов AntBuild (v1, v2, v3), NightSwitcher</p>
     <div class="services-card__price">от 1 000 руб.</div>
-    <a class="services-card__btn" href="#">Уточнить стоимость</a>
+    <button class="btn-reset services-card__btn" data-graph-path="modal-problem">Уточнить стоимость</button>
   </div>
 </div>     
       </div>
@@ -274,13 +274,14 @@
     <div class="services-card__title">Ремонт <span>блоков питания</span></div>
     <p class="services-card__descr">Bitmain, Innosilicon, WhatsMiner, Avalone —любая сложность ремонта</p>
     <div class="services-card__price">от 2 500 руб.</div>
-    <a class="services-card__btn" href="#">Уточнить стоимость</a>
+    <button class="btn-reset services-card__btn" data-graph-path="modal-problem">Уточнить стоимость</button>
   </div>
 </div>       
       </div>
     </div>
   </div>
 </section>
+
 			<!-- complects -->
 <section class="complects" id="complects">
   <div class="container">
@@ -554,7 +555,7 @@
         <div class="col-md-2 col-lg-2">
           <a class="footer__logo" href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
         </div>
-        <div class="col-md-10 col-lg-7">
+        <div class="col-md-10 col-lg-6">
           <nav class="footer__nav">
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
@@ -570,14 +571,14 @@
                 <a href="blog.html">Блог</a>
               </li>
               <li class="footer__nav-item">
-                <a href="contacts.html">Контакты</a>
+                <a href="communication.html">Контакты</a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           <div class="footer__right">
-            <a class="footer__btn" href="#">С нами</a>
+            <button class="btn-reset footer__btn" data-graph-path="modal-call">Связаться с нами</button>
             <div class="socials">
               <ul class="socials__list">
                 <li class="socials__item">
@@ -608,8 +609,84 @@
       </div>
     </div>
   </div> 
-
 </footer>
+<!-- modal -->
+
+  <div class="graph-modal">    
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-call">
+      <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content">
+        <h2 class="graph-modal__title">Оставить заявку</h2>
+        <form class="graph-modal__form form-call">
+          <div class="form-call__wrapper">
+            <div class="input-wrapper form-floating">              
+              <input class="form-control" id="form-call-name" type="text" placeholder="Ваше ФИО*">
+              <label for="form-call-name">Ваше ФИО</label>
+            </div>
+            <div class="input-wrapper form-floating">              
+              <input class="form-control" id="form-call-tel" type="tel" placeholder="Ваш телефон*">
+              <label for="form-call-tel">Ваш телефон</label>
+            </div>
+            <div class="input-wrapper form-floating">              
+              <textarea class="form-control" name="form-call-textarea" id="form-call-text" cols="30" rows="5" placeholder="Введите Ваше сообщение"></textarea>
+              <label for="form-call-text">Ваше сообщение</label>
+            </div>       
+          </div>         
+          <div class="form-call__bottom">           
+            <div class="agreement">
+              <input type="checkbox" id="agreement-checkbox1" class="custom-checkbox">
+              <label for="agreement-checkbox1" class="custom-checkbox-text">Согласен на <span>обработку персональных
+                  данных</span> </label>
+            </div>
+            
+            <button class="graph-modal__form-btn btn">
+              Отправить
+            </button>
+          </div>        
+        </form>
+        
+      </div>
+    </div> 
+
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-problem">
+      <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content">
+        <h2 class="graph-modal__title">Оставить заявку</h2>
+        <form class="graph-modal__form form-call">
+          <div class="form-call__wrapper">
+            <div class="input-wrapper form-floating">              
+              <input class="form-control" id="form-call-name" type="text" placeholder="Ваше ФИО*">
+              <label for="form-call-name">Ваше ФИО</label>
+            </div>
+            <div class="input-wrapper form-floating">              
+              <input class="form-control" id="form-call-tel" type="tel" placeholder="Ваш телефон*">
+              <label for="form-call-tel">Ваш телефон</label>
+            </div>
+            <div class="input-wrapper form-floating">              
+              <textarea class="form-control" name="form-problem-textarea" id="form-problem-text" cols="30" rows="5" placeholder="Опишите Вашу проблему"></textarea>
+              <label for="form-problem-text">Опишите Вашу проблему</label>
+            </div>       
+          </div>         
+          <div class="form-call__bottom">           
+            <div class="agreement">
+              <input type="checkbox" id="agreement-checkbox2" class="custom-checkbox">
+              <label for="agreement-checkbox2" class="custom-checkbox-text">Согласен на <span>обработку персональных
+                  данных</span> </label>
+            </div>
+            
+            <button class="graph-modal__form-btn btn">
+              Отправить
+            </button>
+          </div>        
+        </form>
+        
+      </div>
+    </div> 
+  </div>
+
+
+
+
 		
 	</div>
 
