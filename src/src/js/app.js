@@ -34,7 +34,7 @@ let mySwiperComplects = new Swiper(complectsSlider, {
   loop: true,  
 	breakpoints: {  
 		0: {
-			slidesPerView: 2,	
+			slidesPerView: 1,	
 			centeredSlides: true,
 		},  
 		576: {
@@ -262,10 +262,9 @@ let mySwiperPartners = new Swiper(partnersSlider, {
 
 
 
+
+
 lightGallery(document.getElementById('lightgallery'), {
 	plugins: [lgThumbnail],
 	speed: 500,
 });
-
-
-

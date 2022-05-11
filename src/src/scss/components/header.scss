@@ -6,7 +6,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 130px;
+    height: auto;
+    // height: 130px;
     @media (max-width: 575px){
       padding-top: 0;
       justify-content: center;
@@ -21,7 +22,7 @@
       font-weight: $bold;
       font-size: 22px;
       line-height: 24px;  
-      transition: box-shadow .3s linear;
+      transition: box-shadow .2s linear;
       &:hover {
         box-shadow: -1px 6px 8px -6px rgb(61 186 203 / 35%);
       }
@@ -31,29 +32,34 @@
     }
   }
   &__nav {
+    &.open {
+      transition: opacity 0.2s;
+      visibility: visible;
+      opacity: 1;
+      height: 100vh;
+      z-index: 2;
+      opacity: 1;  
+    }
+    @media (max-width: 991px) {        
+      position: fixed;
+      display: flex;
+      justify-content: center; 
+      flex-direction: column;
+      width: 100%;
+      height: 0;
+      visibility: hidden;
+      opacity: 0;        
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 131, 147, .95);
+    }
     ul {      
       display: flex;
       justify-content: flex-end;     
-      &.open {
-        transition: opacity 0.35s;
-        visibility: visible;
-        opacity: 1;
-        height: 100vh;
-        z-index: 2;
-        opacity: 1;  
-      }
       @media (max-width: 991px) {        
-        position: fixed;
         flex-direction: column;
         align-items: center;   
-        justify-content: center;    
-        width: 100%;
-        height: 0;
-        visibility: hidden;
-        opacity: 0;        
-        left: 0;
-        top: 0;
-        background-color: rgba(0, 131, 147, .95);
+        justify-content: center;          
       }
     }
     li {
@@ -64,7 +70,7 @@
           margin-right: 0;
         }
       }
-      transition: box-shadow .3s linear;
+      transition: box-shadow .2s linear;
       &:hover {
         box-shadow: -1px 6px 8px -6px rgb(61 186 203 / 35%);
       }
@@ -88,6 +94,12 @@
       }      
     }
   }
+  &--fixed {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+  }
   .socials {
     margin-left: 40px;
   }
@@ -104,4 +116,26 @@
 .meat.active,
 .bottom-bun.active {
   opacity: 0;
+}
+.mobile-phone { 
+  margin-top: 15px;
+  font-weight: $bold;
+  font-size: 22px;
+  line-height: 24px;
+}
+.header__nav {
+  .socials__item:not(:last-child) {
+    margin-bottom: 0!important;
+    margin-right: 10px;
+  }
+  .socials__list {
+    flex-direction: row;
+  }
+  .socials {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+.d-none-imp {
+  display: none!important;
 }

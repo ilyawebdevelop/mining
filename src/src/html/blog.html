@@ -1,9 +1,12 @@
 <!-- blog -->
-<section class="blog" id="blog">
-  <div class="container">
+<section class="blog blog-articles" id="blog">
+  @@include('breadcrumps.html',{
+    "second":"Блог"
+    })
+  <div class="container blog-items">
     <div class="row">
       <div class="col">
-        <h2 class="blog__title section-title text-center">
+        <h2 class="blog__title service-title">
           Блог
         </h2>
       </div>
@@ -11,7 +14,7 @@
     <div class="row">
       <div class="col-md-6 col-xl-4">
         <div class="blog__item">
-          <a href="#">
+          <a href="article.html">
             <div class="blog__item-img">
               <img src="@img/blog/blog-img.png" alt="blog-image">
             </div>
@@ -21,7 +24,7 @@
         </div>
       </div>
       <div class="col-md-6 col-xl-4">
-        <a href="#">
+        <a href="article.html">
           <div class="blog__item">
             <div class="blog__item-img">
               <img src="@img/blog/blog-img.png" alt="blog-image">
@@ -32,7 +35,73 @@
         </a>      
       </div>
       <div class="col-md-6 col-xl-4">
-        <a href="#">
+        <a href="article.html">
+          <div class="blog__item">
+            <div class="blog__item-img">
+              <img src="@img/blog/blog-img.png" alt="blog-image">
+            </div>
+            <div class="blog__item-title text-center">Заголовок записи в блоге</div>
+            <div class="blog__item-date text-center">02 мар 12:32</div>
+          </div>
+        </a>       
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <a href="article.html">
+          <div class="blog__item">
+            <div class="blog__item-img">
+              <img src="@img/blog/blog-img.png" alt="blog-image">
+            </div>
+            <div class="blog__item-title text-center">Заголовок записи в блоге</div>
+            <div class="blog__item-date text-center">02 мар 12:32</div>
+          </div>
+        </a>       
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <a href="article.html">
+          <div class="blog__item">
+            <div class="blog__item-img">
+              <img src="@img/blog/blog-img.png" alt="blog-image">
+            </div>
+            <div class="blog__item-title text-center">Заголовок записи в блоге</div>
+            <div class="blog__item-date text-center">02 мар 12:32</div>
+          </div>
+        </a>       
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <a href="article.html">
+          <div class="blog__item">
+            <div class="blog__item-img">
+              <img src="@img/blog/blog-img.png" alt="blog-image">
+            </div>
+            <div class="blog__item-title text-center">Заголовок записи в блоге</div>
+            <div class="blog__item-date text-center">02 мар 12:32</div>
+          </div>
+        </a>       
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <a href="article.html">
+          <div class="blog__item">
+            <div class="blog__item-img">
+              <img src="@img/blog/blog-img.png" alt="blog-image">
+            </div>
+            <div class="blog__item-title text-center">Заголовок записи в блоге</div>
+            <div class="blog__item-date text-center">02 мар 12:32</div>
+          </div>
+        </a>       
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <a href="article.html">
+          <div class="blog__item">
+            <div class="blog__item-img">
+              <img src="@img/blog/blog-img.png" alt="blog-image">
+            </div>
+            <div class="blog__item-title text-center">Заголовок записи в блоге</div>
+            <div class="blog__item-date text-center">02 мар 12:32</div>
+          </div>
+        </a>       
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <a href="article.html">
           <div class="blog__item">
             <div class="blog__item-img">
               <img src="@img/blog/blog-img.png" alt="blog-image">
@@ -45,7 +114,13 @@
     </div>
     <div class="row">
       <div class="col">
-        <a href="blog.html" class="blog__btn text-center">Все записи в блоге</a>
+        <div class="pagination justify-content-center">
+          <button class="pagination-arrow left"><img src="@img/arrow/arrow-left.svg" alt="pagination-arrow"></button>
+          <div class="pagination__item active">1</div>
+          <div class="pagination__item">2</div>
+          <div class="pagination__item">3</div>
+          <button class="pagination-arrow right"><img src="@img/arrow/arrow-right-red.svg" alt="pagination-arrow"></button>
+        </div>
       </div>
     </div>
   </div>

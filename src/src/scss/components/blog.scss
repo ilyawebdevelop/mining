@@ -1,5 +1,5 @@
 // blog
-.blog {
+.blog {  
   &__item {      
     &-img {
       box-shadow: 0px 2px 20px rgba(61, 186, 203, 0.15); 
@@ -7,6 +7,7 @@
       width: 360px;
       height: 240px;
       overflow: hidden;
+      margin: 0 auto;
       img {
         width: 100%;
         height: 100%;
@@ -35,5 +36,41 @@
 		@media (max-width: 1199px){     
 			margin-bottom: 30px;
 		}
+  }
+}
+.blog__title.service-title {
+  text-align: start;
+  padding-left: 98px;
+  margin-bottom: 45px;
+  @media (max-width: 991px) {
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }   
+}
+.blog-items .blog__item {
+  margin-bottom: 45px;
+  @media (max-width: 991px){
+    margin-bottom: 30px;
+  }
+}
+.blog-date {
+  font-weight: $light;
+  font-size: 14px;
+  line-height: 22px;
+  color: $main-light-color;
+  padding-left: 98px;
+  margin-bottom: 10px;
+  @media (max-width: 991px){
+    padding-left: 0;
+  }
+}
+.blog-articles {
+  padding-top: 0;
+  background-color: #fafafa;
+  @media (max-width: 991px){
+    padding-top: 30px;
   }
 }
